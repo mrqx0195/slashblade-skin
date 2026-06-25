@@ -157,7 +157,7 @@ dependencies {
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
     // implementation fg.deobf("blank:coolmod-${mc_version}:${coolmod_version}")
-    implementation fg.deobf("blank:SlashBladeResharped-${minecraft_version}:${slash_blade_version}")
+    modImplementation 'com.github.0999312:SlashBlade_Resharped:6e2a0a092f'
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
