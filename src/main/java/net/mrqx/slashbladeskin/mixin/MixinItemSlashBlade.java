@@ -16,7 +16,7 @@ import java.util.List;
 
 @Mixin(ItemSlashBlade.class)
 public abstract class MixinItemSlashBlade {
-    @Inject(method = "lambda$appendHoverText$24(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Ljava/util/List;Lnet/minecraft/world/item/TooltipFlag;Lmods/flammpfeil/slashblade/capability/slashblade/ISlashBladeState;)V", at = @At(value = "INVOKE", target = "Lmods/flammpfeil/slashblade/item/ItemSlashBlade;appendSpecialEffects(Ljava/util/List;Lmods/flammpfeil/slashblade/capability/slashblade/ISlashBladeState;)V"))
+    @Inject(method = "lambda$appendHoverText$18", at = @At(value = "INVOKE", target = "Lmods/flammpfeil/slashblade/item/ItemSlashBlade;appendSpecialEffects(Ljava/util/List;Lmods/flammpfeil/slashblade/capability/slashblade/ISlashBladeState;)V"))
     public void injectAppendHoverText(ItemStack stack, Level worldIn, List<Component> tooltip, TooltipFlag flagIn, ISlashBladeState s, CallbackInfo ci) {
         ItemSheathDesignDrawing.appendSkinText(stack, tooltip);
     }
